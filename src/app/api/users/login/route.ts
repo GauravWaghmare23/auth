@@ -38,6 +38,7 @@ export async function POST(request: NextRequest){
             } }, { status: 200 });
 
         response.cookies.set("token",token,{ httpOnly: true});
+        console.log(response)
         return response;
 
     } catch (error) {
